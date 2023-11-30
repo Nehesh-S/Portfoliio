@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav i{
+          outline: none;
+          font-size: 2.5rem;
+          color: rgb(00, 50, 255);  
+        }
+        #visit{
+            color: rgb(00, 50, 255);
+        }
+        body{
+            background-color: black;
+        }
+        .container{
+            display: flex;
+            width: 80%;
+            height: 40%;
+            justify-content: center;
+            letter-spacing :1px;
+            margin-left: 10%;
+            color: white;
+        }
+        .container #I{
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+        .head{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            overflow: hidden;
+            padding: 20px;
+            margin: 30px;
+            font-size: 2rem;
+            color: rgb(0, 50, 255);
+        }
+    
+        .pic img{
+            width: 350px;
+            height: 550px;
+            object-fit: cover;
+        }
+        .info{
+            width: 50%;
+            padding: 20px;
+            margin: 10px;
+            
+        }
+        .pic{
+            width: 30%;
+        }
+        #btn{
+            border: 1px solid rgb(0, 50, 255);
+            background-color: rgb(0, 50, 255);
+            border-radius: 12px;
+            padding: 10px;
+            position: relative;
+            top: 20px;
+        }
+        #btn:hover{
+            background:transparent;
+            border: 1px solid rgb(0, 50, 255);
+            cursor: pointer;
+            color: white;
+        }
+        #main{
+            
+            font-size: 1.5rem;
+            letter-spacing: 0px;
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width:768px){
+            .container{
+                margin-left: 0px;
+                display: flex;
+                /* flex-direction: column; */
+                width: 100%;
+            }
+           .info{
+            position: absolute;
+            top: 10rem;
+            left: 1rem;
+            width: 12rem;
+           }
+            .pic>img{
+                position: absolute;
+                top: 15rem;
+                left: 10rem;
+                width: 14rem;
+                height: 18rem;
+                object-fit: contain;
+            }
+            .head>h1{
+                font-size: 3rem;
+            }
+            
+        }
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="logo1.png" class="logo">
+        <ul id="x">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#" id="visit">About</a></li>
+            <li><a href="Resume.html">Portfolio</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="getintouch.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="head">
+    <h1>About Me</h1>
+    </div>
+        <div class="container" >
+            <div class="info">
+             <p id="main">I am <span style="color: rgb(0, 50, 255); font-weight: bold; font-size: 2rem;" id="I" class="hover-underline-animation">Nehesh Sawarkar</span> currently pursuing B.Tech. in Information Technology at St. Vincent Pallotti College of Engineering and Technology.</p> 
+             <p id="main">I'm a self-taught developer with a passion for computer science and programming. I've been fascinated by computers and their functioning ever since I can remember. I started my coding journey with Python, then learning C and C++. Then being interested in web-development, I learned HTML5, CSS, basics of Javascript for Front-End; and MySQL, Flask (Python) for Back-End.</p>
+            </div>
+            <div class="pic">
+             <img src="pic.png" alt="pic">
+            </div>
+        </div>
+        <script>
+
+        </script>
+</body>
+</html>

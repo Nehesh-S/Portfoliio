@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        nav i{
+          outline: none;
+          font-size: 2.5rem;
+          color: rgb(00, 50, 255);  
+        }
+        #visit{
+            color: rgb(00, 50, 255);
+        }
+        body{
+            width: 100%;
+            height: auto;
+            background-color: black;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            width: 100%;
+            padding: 10px;
+            margin: 10px;
+            color: white;
+            flex-wrap: wrap;
+        }
+        .container h1{
+            font-size: 2.8rem;
+            margin-left: 10px;
+        }
+        .container h2{
+            font-size: 2rem;
+        }
+        .container p{
+            font-size: 1.5rem;
+        }
+        .edu{
+            width: 45%;
+            border-left: 6px solid  rgb(00, 50, 255);
+            margin-left: 20px;
+        }
+        .exp{
+            width: 45%;
+            border-left: 6px solid  rgb(00, 50, 255);
+            margin-left: 20px;
+        }
+        @media  screen and (max-width:480px) {
+            .edu,.exp {
+                margin-left: 5px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .container h1{
+                font-size: 1.5rem;
+            }
+            .container h2{
+                font-size: 1.2rem;
+            }
+            .container p{
+                font-size: 0.8rem;
+            }
+            .skills{
+                margin-left: 5px;
+            }
+        }
+        .head{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-direction: column;
+            padding: 20px;
+            margin: 20px;
+            color: white;
+        }
+        .head h1{
+            font-size: 3rem;
+            margin-top: 20px;
+        }
+        .head p{
+            font-size: 1.5rem;
+        }
+        .box{
+            padding: 15px;
+            margin: 15px;
+            gap: 10px;
+            border: 0.1px solid grey;
+        }
+        /* skiils */
+        /* progress nar */
+        .skills{
+            color: #f1f1f1;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            width: 80%;
+            grid-column-gap: 70px;
+            align-items: center;
+            /* text-align: center; */
+            justify-content: center;
+            position: relative;
+            left: 20px;
+            margin-left: 50px;
+        }
+        .progress-bar {
+            margin-top: 5px;
+       position: relative;
+       margin-bottom: 30px;
+       background-color: rgb(59, 58, 58);
+       border-radius: 8px;
+}
+
+.progress {
+  height: 20px;
+  /* background-color: #f1f1f1; */
+  border-radius: 5px;
+  color: white;
+}
+
+.progress-bar .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 5px;
+  background-color: rgb(00, 50, 255);
+  animation: mymove 2s linear 1 ;
+}
+@keyframes mymove {
+  from {
+width: 1%;}
+  to {
+width: 75%;}
+}
+.skill {
+  padding: 2px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.h{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    margin: 10px;
+    padding: 15px;
+    font-size: 1.5rem;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="logo1.png" class="logo">
+        <ul id="x">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#" id="visit">Portfolio</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="getintouch.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="head">
+        <h1 style="color: rgb(00, 50, 255);">Portfolio</h1>
+    </div>
+    <div class="container">
+        <div class="edu">
+            <h1 style="color: rgb(00, 50, 255);">Education</h1>
+            <div class="box">
+            <h2>B.Tech. in IT</h2>
+            <p>St. Vincent Pallotti College of Engineering and Technology</p>
+           </div>
+           <div class="box">
+            <h2>12th</h2>
+            <p>St. Paul Junior College</p>
+           </div>
+           <div class="box">
+             <h2>10th</h2>
+             <p>Montfort Senior Secondary School</p>
+           </div>
+        </div>
+        <div class="exp">
+            <h1 style="color: rgb(00, 50, 255);">Experience</h1>
+           <div class="box">
+            <h2>Web Development Intern</h2>
+            <p>Asterisc Technocrat</p>
+           </div>
+           <div class="box">
+            <h2>Machine Learing Intern</h2>
+            <p>YBI Foundation</p>
+           </div>
+           <div class="box">
+            <h2>Moderator</h2>
+            <p>IGGalaxy</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="container">
+        <div class="edu">
+            <h1 style="color: rgb(00, 50, 255);">Certifications</h1>
+            <div class="box">
+                <h2>Python Certification</h2>
+                <p>Hackerrank</p>
+               </div>
+            <div class="box">
+                <h2>Introduction to Internet of Things</h2>
+                <p>e-Yantra, IIT Bombay</p>
+               </div>
+            <div class="box">
+            <h2>Basics of Embedded Systems and Robotics</h2>
+            <p>e-Yantra, IIT Bombay</p>
+           </div>
+           <div class="box">
+            <h2>Industrial Automation with IIOT</h2>
+            <p>V.R. Jamdar Siemens Centre of Excellence, VNIT Nagpur</p>
+           </div>
+           <div class="box">
+             <h2>Developer Virtual Experience Program</h2>
+             <p>Accenture</p>
+           </div>
+           <div class="box">
+            <h2>Introduction to IoT</h2>
+            <p>Cisco Networking Academy</p>
+          </div>
+          <div class="box">
+            <h2>C++ Programming</h2>
+            <p>D'soft Computer Training Centre</p>
+          </div>
+        </div>
+        <div class="exp">
+            <h1 style="color: rgb(00, 50, 255);">Skills</h1>
+           <div class="box">
+            <h2>C Programming</h2>
+           </div>
+           <div class="box">
+            <h2>C++ Programming</h2>
+           </div>
+           <div class="box">
+            <h2>Python Programming</h2>
+           </div>
+           <div class="box">
+            <h2>HTML</h2>
+           </div>
+           <div class="box">
+            <h2>CSS</h2>
+           </div>
+           <div class="box">
+            <h2>Machine Learning</h2>
+           </div>
+           <div class="box">
+            <h2>Blockchain</h2>
+           </div>
+           <div class="box">
+            <h2>Embedded C Programming</h2>
+           </div>
+           <div class="box">
+            <h2>Arduino</h2>
+           </div>
+           <div class="box">
+            <h2>Microcontrollers</h2>
+           </div>
+           <div class="box">
+            <h2>Embedded Systems</h2>
+           </div>
+        </div>
+    </div>
+   
+</body>
+</html>

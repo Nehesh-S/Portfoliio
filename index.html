@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width = device-width , initial-scale = 1.0">
+
+    <title>Personal Portfolio Website</title>
+    <!----CSS link----->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    
+    <style>
+      body{
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        color: white;
+        
+      }
+      #visit{
+        color: rgb(00, 50, 255);
+      }
+      nav i{
+          outline: none;
+          font-size: 2.5rem;
+          color: rgb(00, 50, 255);
+      }
+      button{
+          background: transparent;
+          outline: none;
+          border: none;
+      }
+
+      
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="logo1.png" class="logo">
+            <ul id="x">
+                <li><a href="#" id="visit">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Resume.html">Portfolio</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="getintouch.html">Contact</a></li>
+            </ul>
+            <img src="theme_sun.png" class="favico1">
+            <img src="theme_moon.png" class="favico2">
+            <label class="switch">
+              <input type="checkbox" onclick="myFunction()">
+              <span class="slider round"></span>
+            </label>
+        </nav>
+          <a href="#" class="icon" onclick="myfun()"> <i id="bar" class="fa-sharp fa-solid fa-bars"></i> </a>
+          <a href="#" class="icon" onclick="closefunc()"> <i id="bar2" class="fa-solid fa-xmark"></i> </a>
+        <div class="content">
+            <h1>Hello, I’m <span class="hover-underline-animation">Nehesh</span></h1>
+            <p>I’m an enthusiastic IT undergrad, Tech savvy. Passionate about recent developments in technology like IoT, Blockchain, and many more. Compassionate about learning and experiencing new things. Willing to learn about and adapt new technologies and innovations.</p>
+            <a href="Resume.pdf" download="Resume.pdf" class="btn">Download CV</a>
+        </div>
+        <div class="soc">
+        <ul>
+          <li>
+            <a href="https://github.com/Nehesh-S" target="_blank"><i class="fab fa-github" id="github"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/nehesh/" target="_blank"><i class="fab fa-linkedin" id="linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      function myfun() {
+        var x = document.getElementById("x");
+        var y = document.getElementById("bar");
+        if(x.style.display == "block") {
+          x.style.display = "none";
+        }
+        else {
+          x.style.display = "block";
+        }
+        
+      }
+      function myFunction() {
+               var element = document.body;
+               element.classList.toggle("dark-mode"); 
+            }
+    </script>
+</body>
+</html>
