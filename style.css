@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    cursor: default;
 }
 a{
     text-decoration: none;
@@ -22,7 +23,6 @@ nav{
 .logo{
     max-height: 100px;
     border-radius: 50%;
-    cursor: pointer;
     z-index: 5;
 }
 .favico1{
@@ -55,6 +55,12 @@ nav ul li a{
     position: relative;
     padding: 5px 0;
 }
+.dark-mode h2{
+  color: rgba(0, 0, 0, 0.747);
+}
+.dark-mode p{
+  color: rgba(0, 0, 0, 0.747);
+}
 nav ul li a:hover{
     color: #0032FF;
 }
@@ -85,6 +91,7 @@ nav ul li a:hover:after{
     background-size: 152% 100%;
     background: #0032FF;
     border: 2px solid #0032FF;
+    cursor: pointer;
 }
 .btn>i{
   font-size: 1rem;
@@ -157,6 +164,7 @@ nav ul li a:hover:after{
   position: absolute;
   right: 20px;
   bottom: 20px;
+  cursor: pointer;
 }
 .soc ul{
   list-style: none;
@@ -172,21 +180,27 @@ nav ul li a:hover:after{
 
 .soc>ul>li>a>#github:hover{
   color: rgba(216, 216, 216, 0.486);
+  cursor: pointer;
 }
 .soc>ul>li>a>#linkedin:hover{
   color: rgb(93, 149, 229);
+  cursor: pointer;
 }
 .dark-mode .soc>ul>li>a>#github{
   color: rgba(0, 0, 0, 0.747);
+  cursor: pointer;
 }
 .dark-mode .soc>ul>li>a>#linkedin{
   color: rgba(0, 0, 0, 0.747);
+  cursor: pointer;
 }
 .dark-mode .soc>ul>li>a>#github:hover{
   color: rgb(0, 0, 0);
+  cursor: pointer;
 }
 .dark-mode .soc>ul>li>a>#linkedin:hover{
   color: rgb(5, 40, 90);
+  cursor: pointer;
 }
 
 #bar{

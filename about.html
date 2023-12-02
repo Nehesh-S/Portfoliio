@@ -124,6 +124,12 @@
             <li><a href="projects.html">Projects</a></li>
             <li><a href="getintouch.html">Contact</a></li>
         </ul>
+        <img src="theme_sun.png" class="favico1">
+        <img src="theme_moon.png" class="favico2">
+        <label class="switch">
+          <input type="checkbox" onclick="myFunction()">
+          <span class="slider round"></span>
+        </label>
     </nav>
     <div class="head">
     <h1>About Me</h1>
@@ -138,7 +144,21 @@
             </div>
         </div>
         <script>
-
-        </script>
+            function myfun() {
+              var x = document.getElementById("x");
+              var y = document.getElementById("bar");
+              if(x.style.display == "block") {
+                x.style.display = "none";
+              }
+              else {
+                x.style.display = "block";
+              }
+              
+            }
+            function myFunction() {
+                     var element = document.body;
+                     element.classList.toggle("dark-mode"); 
+                  }
+          </script>
 </body>
 </html>
